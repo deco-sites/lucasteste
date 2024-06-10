@@ -7,11 +7,11 @@ export interface Props {
    * @default It Works!
    */
   name?: string;
-
+  description: string;
   count?: number;
 }
 
-export default function Section({ name = "It Works!", count = 0 }: Props) {
+export default function Section({ name = "It Worksss!", description = "teste", count = 0 }: Props) {
   /**
    * usePartialSection is a nice hook for getting the HTMX link to render this section,
    * but with the following Props
@@ -27,7 +27,9 @@ export default function Section({ name = "It Works!", count = 0 }: Props) {
       <div class="leading-10 text-6xl" dangerouslySetInnerHTML={{
         __html: name,
       }}/>
-
+      <div class="leading-10 text-6xl" dangerouslySetInnerHTML={{
+        __html: description,
+      }}/>
       <div class="flex flex-col items-center justify-center gap-2">
         <div class="flex items-center gap-4">
           <button
