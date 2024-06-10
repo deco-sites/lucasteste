@@ -44,5 +44,11 @@
   "/.deco/blocks/deco-htmx.json": {
     "blockType": "apps",
     "__resolveType": "site/apps/deco/htmx.ts"
+  },
+  "/.deco/blocks/pages-Pagina%2520legal-309429.json": {
+    "name": "Pagina legal",
+    "path": "/exemplo",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
   }
 }
